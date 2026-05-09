@@ -7,12 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'kh-blue': '#00A3FF', // Warna biru neon utama
-        'kh-dark': '#050505', // Latar belakang hitam pekat
-        'kh-card': 'rgba(255, 255, 255, 0.03)', // Transparansi kaca
+        'kh-blue': '#00A3FF',
+        'kh-dark': '#050505',
+        'kh-card': 'rgba(255, 255, 255, 0.03)',
       },
       boxShadow: {
-        'neon-blue': '0 0 20px rgba(0, 163, 255, 0.3)', // Efek cahaya neon
+        'neon-blue': '0 0 25px rgba(0, 163, 255, 0.3)',
+      },
+      padding: {
+        '4.5': '1.125rem', // Custom padding untuk tombol biar lebih berisi
       }
     },
   },
