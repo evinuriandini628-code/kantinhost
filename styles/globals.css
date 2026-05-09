@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-kh-dark text-white antialiased;
+    /* Efek tekstur halus biar nggak plain hitam banget */
+    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+  }
+}
+
+/* Custom Scrollbar biar makin robotik */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #00A3FF;
+  border-radius: 10px;
+}
