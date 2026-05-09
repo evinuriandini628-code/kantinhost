@@ -4,20 +4,24 @@
 
 @layer base {
   body {
+    /* Set warna dasar agar tidak putih polos saat loading */
     @apply bg-kh-dark text-white antialiased;
-    /* Efek tekstur halus biar nggak plain hitam banget */
+    /* Tekstur carbon agar desain robotik lo makin kerasa */
     background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+    min-height: 100vh;
   }
 }
 
-/* Custom Scrollbar biar makin robotik */
-::-webkit-scrollbar {
-  width: 5px;
+/* Custom Utilities untuk Glassmorphism */
+@layer components {
+  .glass-card {
+    @apply bg-kh-card backdrop-blur-3xl border border-white/10 shadow-2xl;
+  }
 }
-::-webkit-scrollbar-track {
-  background: #050505;
-}
-::-webkit-scrollbar-thumb {
-  background: #00A3FF;
-  border-radius: 10px;
+
+/* Hilangkan arrow di input type number biar bersih */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
