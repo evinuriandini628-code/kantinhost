@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "tailwindcss"; /* Ini harus ada di paling atas! */
 
 @theme {
   --color-kh-blue: #00A3FF;
