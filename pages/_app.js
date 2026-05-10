@@ -1,4 +1,4 @@
-import '../styles/globals.css' // Pastikan baris ini ada!
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
